@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
+require_relative 'dictionary'
+require_relative 'secret_word'
+
 # Game class for the game of Hangman
 # Maximum of 7 incorrect guesses. Words are loaded form the google 10,000 words text file
-#
 class Game
   def initialize
     load_dictionary
