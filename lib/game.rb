@@ -22,7 +22,7 @@ class Game
     @secret = SecretWord.new(@words.random)
     round = 1
     display(round)
-    until @incorrect_guesses_left == 0
+    until @incorrect_guesses_left.zero?
       round += 1
       # ask for a guess
       char = get_guess
